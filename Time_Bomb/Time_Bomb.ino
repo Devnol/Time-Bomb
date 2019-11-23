@@ -2,7 +2,7 @@
  * Project by Panos Koutsoumanis (aka CommandBlock6417)
  * last edited on 22/11/2019
  * for a more complex version that you can select the time from a potentiometer visit here:
- * 
+ *  https://github.com/CommandBlock6417/Time-Bomb-With-Selector
  * Parts required:
  *   18x cables
  *   1x 100Ω resistor
