@@ -1,11 +1,20 @@
 # Time-Bomb
 
-this is a bomb ( that detonates only acoustically and is very nervewracking) 
-      that I made on the 19-23/11/2019, when I was twelve years old.
-      It is not that useful but I think it's pretty cool.
-      Here is how it works:
-          you can select the value of the bomb in seconds on the b_setup tab
-          when the Arduino is plugged in, the countdown starts immediately.
-          Once the countdown finishes, the "bomb" emits a very annoying sound that will wrack anyone's nerves.
-  NOTE: This NOT a weapon of mass destruction. 
-      It is only used for mental destruction, if one wants to mess with another's nerves.
+This is a bomb (that detonates only acoustically and is kinda nervewracking) that I originally made on November 2019, when I was twelve years old. 
+
+It doesn't have any functional use but I think it's pretty cool if you wanna pull a prank on your friends or something.
+
+Original code can be viewed in [the v1.0 tag archive](https://github.com/Devnol/Time-Bomb/releases/tag/v1.0). I had also made a fork of this (before I knew how GitHub forks worked) that you can find [here](https://github.com/Devnol/Time-Bomb-With-Selector). The only difference of that one is that it used a potentiometer to choose the time before it "detonates" instead of it being hardcoded. Changes after the v1.0 tag in this repository will include that feature, albeit with push buttons. 
+### Parts Required:
+
+- Arduino board (tested on UNO/Atmel 328p, any with pwm and i2c support should work)
+- 16x2 Character LCD display
+- I2c Character LCD driver (that matches the LCD's power requirements)
+- 3x momentary push buttons
+- 3x 1kΩ resistors
+- Piezo buzzer
+- 100Ω resistor
+- Some form of power supply for the Arduino and circuit
+
+An example wiring diagram is attached as a [png image](blob/master/Time_Bomb_Schematic.png) and [Fritzing sketch file](blob/master/Time_Bomb_Schematic.fzz).
+
