@@ -58,7 +58,8 @@ uint8_t getTime() {
     return setTime;
 }
 
-void setup() { 
+void setup() {
+    tick();
     pinMode(Buzzer,OUTPUT);
     pinMode(LeftBtn,INPUT);
     pinMode(MiddleBtn,INPUT);
@@ -71,20 +72,19 @@ void setup() {
 }
 
 void loop() {
-    T.Timer();
-    if (T.TimeHasChanged() ){    
-        tick();
-        lcd.setCursor(0, 0); //col, row
-        lcd.print("You have ");
-        lcd.print(T.ShowMinutes());
-        lcd.print(":");
-        lcd.print(T.ShowSeconds());
-        lcd.setCursor(0, 1);
-        lcd.print("to evacuate");
-    }
-    else if (T.ShowTotalSeconds() == 0){
-        lcd.clear();
+    if (T.ShowTotalSeconds() == 0){
         lcd.print("Kaboom lawl");
         while(true) siren();
     }
+
+    T.Timer();
+    lcd.setCursor(0, 0); //col, row
+    lcd.print("You have ");
+    lcd.print(T.ShowMinutes());
+    lcd.print(":");
+    lcd.print(T.ShowSeconds());
+    lcd.setCursor(0, 1);
+    lcd.print("to evacuate");
+    tick();
+    lcd.clear();
 }
