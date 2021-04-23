@@ -18,7 +18,7 @@ Optional parts:
 - 3x momentary push buttons
 - 3x 1kΩ resistors
 
-An example wiring diagram is attached as a [png image](blob/master/Time_Bomb_Schematic.png) and [Fritzing sketch file](blob/master/Time_Bomb_Schematic.fzz). If you don't use the buttons, you may omit them and just wire the display and buzzer.
+An example wiring diagram is attached as a [png image](Time_Bomb_Schematic.png) and [Fritzing sketch file](Time_Bomb_Schematic.fzz). If you don't use the buttons, you may omit them and just wire the display and buzzer.
 
 ### How to Use:
 1. Follow the wiring diagram above
